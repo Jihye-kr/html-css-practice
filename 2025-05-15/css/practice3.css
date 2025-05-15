@@ -1,0 +1,15 @@
+h2:hover {
+  color: red;
+}
+a:active {
+  background-color: green;
+}
+a:focus {
+  background-color: blue;
+}
+.box span:active {
+  background-color: orangered;
+}
+input:focus {
+  background-color: orchid;
+}

@@ -1,0 +1,33 @@
+.box::before {
+  content: "앞";
+}
+.box::after {
+  content: "뒤";
+}
+/* 이때, content의 내용이 없다면 ""이렇게 null값이라도 줘야 한다! */
+.text::before {
+  content: "택시 ";
+}
+.text::after {
+  content: " 빨리요!";
+}
+
+[disabled] {
+  color: red;
+}
+[type="password"] {
+  color: blue;
+}
+[type="text"][value="HEROPY"] {
+  color: green;
+}
+
+.practice [disabled] {
+  background-color: red;
+}
+.practice > [placeholder="이름"] {
+  background-color: orange;
+}
+.practice :not([placeholder]) {
+  background-color: blue;
+}
