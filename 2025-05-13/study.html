@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>HTML study</title>
+    <title>HTML Study</title>
     <!-- 
          style : HTML의 스타일 정의 
          link : CSS 파일 연계에 사용
@@ -20,7 +20,7 @@
       <p></p>
       <h3>✅ 1.1 요소 Element</h3>
       <p>
-        - htm 요소 element 는 opening tag와 closing tag 그리고 content로 구성
+        - html 요소 element 는 opening tag와 closing tag 그리고 content로 구성
       </p>
       <h3>🔗 1.2 중첩 nested element</h3>
       <p>- 중첩 관계를 다른 말로 하면 <b>부모자식 관계</b></p>
@@ -87,6 +87,7 @@
       </div>
       <div>
         <h3>input 입력 값 받기</h3>
+
         <form>
           <input type="text" value="text" /><br />
           <input type="button" value="button" /><br />
@@ -125,46 +126,38 @@
     </div>
     <hr />
     <div>
-      <h1>Practice. 설문조사 폼 만들기</h1>
-
-      <form>
-        <fieldset>
-          <legend>설문조사</legend>
-          <h2>이름</h2>
-          <input type="text" value="" />
-          <h2>이메일</h2>
-          <input type="text" placeholder="love@exampe.com" />
-
-          <h2>나이</h2>
-          <input type="radio" name="age" />10대
-          <input type="radio" name="age" />20대
-          <input type="radio" name="age" />30대
-          <input type="radio" name="age" />40대
-          <input type="radio" name="age" />50대
-          <input type="radio" name="age" />60대 이상
-
-          <h2>원하는 강의(복수 응답 가능합니다.)</h2>
-          <input type="checkbox" name="lecture" />html
-          <input type="checkbox" name="lecture" />javascript
-          <input type="checkbox" name="lecture" />css
-
-          <h2>의견</h2>
-          <textarea
-            name="opinion"
-            cols="30"
-            rows="5"
-            placeholder="하고 싶은 말을 써주세요 :)"
-          ></textarea>
-          <input type="button" value="제출" />
-        </fieldset>
-      </form>
-    </div>
-    <div>
       <h1>테이블 만들기</h1>
-      <table>
-        <caption>
+      <table border="1">
+        <caption style="caption-side: bottom">
           캡션
         </caption>
+        <tbody>
+          <tr>
+            <td colspan="4">1</td>
+            <td rowspan="2">2</td>
+          </tr>
+          <tr>
+            <td rowspan="2">3</td>
+            <td colspan="3">center</td>
+          </tr>
+          <tr>
+            <td colspan="4">4</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table border="1" cellspacing="0" cellpading="30">
+        <caption style="caption-side: top">
+          표 꾸미기
+        </caption>
+        <thead>
+          <tr>
+            <th>1차</th>
+            <th>2차</th>
+            <th>이미지</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
       </table>
     </div>
   </body>
