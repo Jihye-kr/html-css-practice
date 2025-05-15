@@ -1,0 +1,52 @@
+.relative {
+  #em {
+    font-size: 10em;
+  }
+  #rem {
+    font-size: 10em;
+  }
+  #vw {
+    font-size: 10vw;
+  }
+  #vh {
+    font-size: 10vh;
+  }
+  #vmin {
+    font-size: 10vmin;
+  }
+  #vmax {
+    font-size: 10vmax;
+  }
+  #h1 {
+    font-size: 10%;
+  }
+  #h3 {
+    font-size: 10%;
+  }
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 16px;
+}
+.em-wrap {
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+.rem-wrap {
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+/* 기본은 16px */
+/* em은 body의 폰트 사이즈를 기준으로 상대 사이즈를 잡는다. */
+/* rem은 html의 폰트 사이즈를 기준으로 상대 사이즈를 잡는다.  */
